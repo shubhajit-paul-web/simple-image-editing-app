@@ -21,17 +21,19 @@ window.addEventListener("DOMContentLoaded", () => {
     // This function for Image Editing
     const editing = () => {
         imgEditForm.addEventListener("input", () => {
-            // edit option values
+            // editing option values
             let blur = editOptions[0].value;
             let brightness = editOptions[1].value;
             let contrast = editOptions[2].value;
             let grayscale = editOptions[3].value;
             let opacity = editOptions[4].value;
             let saturate = editOptions[5].value;
+            let hueRotate = editOptions[6].value;
+            let invert = editOptions[7].value;
 
             // apply filter styles
             if (image.complete && image.naturalWidth !== 0) {
-                let filterValue = `blur(${blur}px) brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) opacity(${opacity}%) saturate(${saturate}%)`;
+                let filterValue = `blur(${blur}px) brightness(${brightness}%) contrast(${contrast}%) grayscale(${grayscale}%) opacity(${opacity}%) saturate(${saturate}%) hue-rotate(${hueRotate}deg) invert(${invert}%)`;
 
                 image.style.filter = filterValue;
             }
