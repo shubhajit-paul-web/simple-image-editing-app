@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-view">
+            <img src="" alt="" class="image" />
+            <div class="image-input-box">
+                <input type="url" placeholder="Enter your image url" />
+                <p class="error">Please enter a valid image URL!!</p>
+                <button class="image-submit-btn">Submit</button>
+            </div>
+            <button class="add-image-btn">Add Image</button>
+        </div>
+        <form class="image-editor">
+            <div class="block">
+                <div>
+                    <p>Blur</p>
+                    <input type="range" min="0" max="20" value="0" />
+                </div>
+                <div>
+                    <p>Brightness</p>
+                    <input type="range" min="0" max="20" value="0" />
+                </div>
+            </div>
+            <div class="block">
+                <div>
+                    <p>Contrast</p>
+                    <input type="range" min="0" max="20" value="0" />
+                </div>
+                <div>
+                    <p>Grayscale</p>
+                    <input type="range" min="0" max="20" value="0" />
+                </div>
+            </div>
+            <div class="block">
+                <div>
+                    <p>Opacity</p>
+                    <input type="range" min="0" max="20" value="0" />
+                </div>
+                <div>
+                    <p>Saturate</p>
+                    <input type="range" min="0" max="20" value="0" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
